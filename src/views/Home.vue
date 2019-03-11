@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PhotoMap
+        id="map"
+        v-bind:center="{'lat': 65.022690, 'lng': 35.708120}"
+        v-bind:location="12"
+        v-bind:zoom="16"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PhotoMap from '@/components/PhotoMap.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    PhotoMap
   }
 }
 </script>
+<style>
+  #map {
+    height: 80vh !important;
+    width: calc(100% + 20px) !important;
+    margin: -10px !important;
+  }
+</style>
