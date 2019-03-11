@@ -1,6 +1,6 @@
 # vue2leaflet-markercluster-issue
 
-## Check the files:
+## Impacted files:
 ```
 Home.vue
 PhotoMap.vue
